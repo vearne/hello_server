@@ -1,4 +1,4 @@
 *.swp
 nohup.out
-ipservice
+hello_server
 *config.yaml

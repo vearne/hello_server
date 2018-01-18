@@ -20,8 +20,7 @@ func NewServer(wgp * sync.WaitGroup) {
 	defer wgp.Done()
 
 	router := fasthttprouter.New()
-	// 1. 获取IP信息
-	// /v1/ipinfo?ip=xxx
+	// 一个测试web服务
 	router.GET("/hello", BasicRecover(HelloHandler))
 
 	addr := fmt.Sprintf("%v:%v", context.GlobalConfig.Bind.Host,
